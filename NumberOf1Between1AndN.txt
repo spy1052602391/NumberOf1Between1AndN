@@ -1,0 +1,19 @@
+
+
+class Solution {
+    public int NumberOf1Between1AndN_Solution(int n) {
+        int result = 0;
+        for(int i=1; i<=n; i++){
+            String str = new String(i+"");
+            char[] chars = str.toCharArray();
+            for(int j=0; j<chars.length; j++){
+                if(chars[j] == '1')
+                    result++;
+            }
+        }
+        return result;
+    }
+}
+
+public class Main {
+}
